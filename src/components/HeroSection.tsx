@@ -1,5 +1,6 @@
 import React from 'react';
-import { Sparkles, BookOpen, ShieldCheck, ArrowRight, Check, Award } from 'lucide-react';
+import { Sparkles, BookOpen, ShieldCheck, Check, Award } from 'lucide-react';
+import { HotmartWidget } from './HotmartWidget';
 
 interface HeroSectionProps {
   onAccept: () => void;
@@ -69,13 +70,7 @@ export function HeroSection({ onAccept, onDecline }: HeroSectionProps) {
               </div>
               <p className="text-xs text-slate-400">Cancela cuando quieras con 1 clic.</p>
               
-              <button
-                onClick={onAccept}
-                className="w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold shadow-lg shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2 group cursor-pointer"
-              >
-                <span>¡SI! QUIERO LA APP, AÑADIR A MI PEDIDO</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </button>
+              <HotmartWidget />
 
               <div className="text-[11px] text-slate-500 flex items-center justify-center gap-1">
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />

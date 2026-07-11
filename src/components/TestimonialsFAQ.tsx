@@ -1,6 +1,7 @@
 import React from 'react';
 import { Star, ShieldCheck } from 'lucide-react';
 import { Testimonial } from '../types';
+import { HotmartWidget } from './HotmartWidget';
 
 interface TestimonialsSectionProps {
   onAccept: () => void;
@@ -93,13 +94,8 @@ export function TestimonialsFAQ({ onAccept, onDecline }: TestimonialsSectionProp
           Añade la App Codex Bíblico y comienza a disfrutar cada mes de material nuevo académico y herramientas profesionales listas de liderazgo.
         </p>
 
-        <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button
-            onClick={onAccept}
-            className="w-full sm:w-auto px-10 py-5 rounded-2xl bg-slate-950 hover:bg-slate-900 text-amber-400 font-extrabold text-xl shadow-2xl hover:shadow-3xl transition-all transform hover:-translate-y-0.5 cursor-pointer flex items-center justify-center gap-2"
-          >
-            <span>¡SI! QUIERO LA APP, AÑADIR A MI PEDIDO</span>
-          </button>
+        <div className="pt-2 flex flex-col items-center justify-center gap-4">
+          <HotmartWidget id="hotmart-sales-funnel-2" />
         </div>
 
         <div className="flex items-center justify-center gap-2 text-xs font-semibold text-slate-950/80 pt-2">
