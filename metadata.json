@@ -1,0 +1,7 @@
+{
+  "name": "Codex Bíblico",
+  "description": "Página de upsell de alta conversión para la App de Formación Bíblica Profunda y Herramientas de Liderazgo",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
