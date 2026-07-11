@@ -32,11 +32,26 @@ export function HotmartWidget({ id = 'hotmart-sales-funnel' }: HotmartWidgetProp
     }
   }, [id]);
 
+  const handleClick = () => {
+    if (id !== 'hotmart-sales-funnel') {
+      const el = document.getElementById('acceso-inmediato');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
-    <div className="w-full my-4">
+    <div className="w-full my-4 flex flex-col items-center cursor-pointer" onClick={handleClick}>
       {/* <!-- HOTMART - Sales Funnel Widget --> */}
       {/* <!--- sales funnel container ---> */}
-      <div id={id}></div>
+      <div id={id} className="w-full max-w-lg">
+        <div className="w-full py-4 px-6 rounded-2xl bg-slate-950 hover:bg-slate-900 text-amber-400 font-extrabold text-base md:text-lg shadow-2xl transition-all flex items-center justify-center gap-2 text-center">
+          <span>¡SI! QUIERO LA APP, AÑADIR A MI PEDIDO</span>
+        </div>
+      </div>
       {/* <!-- HOTMART - Sales Funnel Widget --> */}
     </div>
   );

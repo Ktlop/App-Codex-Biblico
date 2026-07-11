@@ -29,7 +29,7 @@ export function HeroSection({ onAccept, onDecline }: HeroSectionProps) {
         </p>
 
         {/* Mockup Card / Visual Banner */}
-        <div className="my-8 relative rounded-2xl overflow-hidden border border-slate-700/80 bg-gradient-to-b from-slate-900/90 to-slate-950/95 shadow-2xl p-6 md:p-8 text-left max-w-4xl mx-auto backdrop-blur-md">
+        <div id="acceso-inmediato" className="my-8 relative rounded-2xl overflow-hidden border border-slate-700/80 bg-gradient-to-b from-slate-900/90 to-slate-950/95 shadow-2xl p-6 md:p-8 text-left max-w-4xl mx-auto backdrop-blur-md">
           <div className="absolute top-0 right-0 bg-amber-500 text-slate-950 font-bold px-4 py-1 rounded-bl-xl text-xs uppercase tracking-widest shadow">
             Acceso Inmediato
           </div>
